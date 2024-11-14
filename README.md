@@ -8,12 +8,12 @@ To write a program to implement the Decision Tree Regressor Model for Predicting
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. Import the required libraries.
-2. Upload the csv file and read the dataset.
-3. Check for any null values using the isnull() function.
-4. From sklearn.tree inport DecisionTreeRegressor.
-5. Import metrics and calculate the Mean squared error.
-6. Apply metrics to the dataset, and predict the output.
+1. Import the required libraries as pandas.
+2. The Position column, which is categorical, is encoded into numerical values using LabelEncoder.
+3. The data is split into training and testing sets with an 80-20 ratio using train_test_split.
+4. A DecisionTreeRegressor is instantiated and trained on the training data (x_train and y_train).
+5. The model's performance is evaluated using Mean Squared Error (MSE) and R-squared (R²) metrics.
+6. The model predicts the salary for an employee with Position encoded as 5 and Level 6 using dt.predict([[5, 6]]).
 ## Program:
 ```
 /*
